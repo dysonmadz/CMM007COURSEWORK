@@ -40,6 +40,23 @@
                     width: 100px;
                     height: auto; 
                 }
+                .column {
+  float: left;
+}
+.column.side {
+  width: 25%;
+}
+
+
+.column.middle {
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
             </style>
         </head>
         <body>
