@@ -1,0 +1,43 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the navigation bar */
+.navbar {
+    background-color: #333; /* Background color */
+    overflow: hidden; /* Hide overflow content */
+}
+
+/* Style for the links in the navigation bar */
+.navbar a {
+    float: left; /* Float links to the left */
+    display: block; /* Display as block elements */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 14px 20px; /* Padding for spacing */
+    text-decoration: none; /* Remove default underline */
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd; /* Background color on hover */
+    color: black; /* Text color on hover */
+}
+
+/* Active/current link */
+.navbar a.active {
+    background-color: #555; /* Background color for active link */
+}
+
+/* Add a grey right border to all links */
+.navbar a {
+    border-right: 1px solid #bbb;
+}
+
+/* Remove border on last link */
+.navbar a:last-child {
+    border-right: none;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            background-color: #3498db; 
+            overflow: hidden; 
+            display: flex; 
+            justify-content: flex-end; 
+            align-items: center; 
+            padding: 10px; 
+        }
+        .navbar a {
+            color: white;
+            text-align: left;
+            padding: 10px 20px; 
+            text-decoration: none; 
+        }
+        .navbar a:hover {
+            background-color: #3498db;
+        }
+        .navbar a.active {
+            background-color: #3498db;
+        }
+        .login-register a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px; 
+        }
+        .logo img {
+            width: 100px;
+            height: auto; 
+        }
+    </style>
+</head>
+<body>
+<!-- start of header  -->
+<header class="site-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-10">
+                <nav class="navbar">
+                    <div class="logo">
+                        <img src="CSS/images/logo.png" alt="Maindish Aberdeen Logo">
+                    </div>
+                    <a href="home.html">Home</a>
+                    <a href="foodmenu.html">Food Menu</a>
+                    <a href="Aboutus.html">About us</a>
+                    <a href="History.html">History</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contactus.html">Contact</a>
+                    <div class="login-register">
+                        <a href="login.html">Login</a>
+                        <a href="register.html">Register</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Recipe Content -->
+    <div class="container">
+        <h1>Asian Recipes</h1>
+
+        <!-- Recipe 1: Chicken Teriyaki -->
+        <div class="recipe">
+            <h2>Chicken Teriyaki</h2>
+            <img src="chicken-teriyaki.jpg" alt="Chicken Teriyaki">
+            <p>Enjoy the savory-sweet flavors of Japan with this delicious chicken teriyaki recipe. Tender chicken thighs marinated in a flavorful teriyaki sauce, then grilled to perfection. Serve with steamed rice and vegetables for a satisfying meal that's sure to please the whole family.</p>
+        </div>
+
+        <!-- Recipe 2: Pad Thai -->
+        <div class="recipe">
+            <h2>Pad Thai</h2>
+            <img src="pad-thai.jpg" alt="Pad Thai">
+            <p>Transport your taste buds to Thailand with this classic Pad Thai recipe. Stir-fried rice noodles tossed with tofu, shrimp, or chicken, along with eggs, bean sprouts, and peanuts, all coated in a tangy tamarind sauce. Bursting with flavor and texture, Pad Thai is a beloved dish enjoyed around the world.</p>
+        </div>
+
+        <!-- Recipe 3: Chicken Curry -->
+        <div class="recipe">
+            <h2>Chicken Curry</h2>
+            <img src="chicken-curry.jpg" alt="Chicken Curry">
+            <p>Experience the bold and aromatic flavors of India with this comforting chicken curry recipe. Tender chicken simmered in a fragrant blend of spices, coconut milk, and tomatoes, creating a rich and flavorful sauce. Serve with fluffy basmati rice or warm naan bread for a satisfying meal.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer" style="background-color: #3498db; color: #fff; padding: 50px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4" style="text-align: center;">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@maindishaberdeen.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+                <div class="col-lg-4" style="text-align: center;">
+                    <h3>View Our Food Menu</h3>
+                    <p>Explore our delicious dishes!</p>
+                    <a href="foodmenu.html" class="btn btn-primary" style="display: inline-block; background-color: #fff; color: #3498db; padding: 10px 20px; border-radius: 5px; text-decoration: none;">View Menu</a>
+                </div>
+                <div class="col-lg-4" style="text-align: center;">
+                    <h3>Privacy Policy</h3>
+                    <p>Read our privacy policy to learn how we protect your data.</p>
+                    <a href="privacy.html" style="color: #fff;">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
