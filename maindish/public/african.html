@@ -1,73 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .navbar {
-            background-color: #3498db; 
-            overflow: hidden; 
-            display: flex; 
-            justify-content: flex-end; 
-            align-items: center; 
-            padding: 10px; 
-        }
-        .navbar a {
-            color: white;
-            text-align: left;
-            padding: 10px 20px; 
-            text-decoration: none; 
-        }
-        .navbar a:hover {
-            background-color: #3498db;
-        }
-        .navbar a.active {
-            background-color: #3498db;
-        }
-        .login-register a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px; 
-        }
-        .logo img {
-            width: 100px;
-            height: auto; 
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
+
 <body>
-<!-- start of header  -->
-<header class="site-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2">
-            </div>
-            <div class="col-lg-10">
-                <nav class="navbar">
-                    <div class="logo">
-                        <img src="CSS/images/logo.png" alt="Maindish Aberdeen Logo">
+    <!-- start of header  -->
+    <header class="site-header">
+        <div class="">
+            <div class="row">
+                <div class="col-lg-2">
+
+                </div>
+                <div class="col-lg-8">
+                    <div class="flex just bg-[#3498db] justify-between p-4 px-10">
+                        <div class="logo bg-white  ">
+                            <img src="logo.png" class="size-12 p-1 rounded" alt="Maindish Aberdeen Logo">
+                        </div>
+                        <nav class="navbar flex gap-8 text-white pt-4 ">
+                            <a href="home.html">Home</a>
+                            <a href="foodmenu.html">Food Menu</a>
+                            <a href="Aboutus.html">About us</a>
+                            <a href="History.html">History</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="contactus.html">Contact</a>
+                            <div class="login-register">
+                                <a href="login.html">Login</a>
+                                <a href="register.html">Register</a>
+                            </div>
+                        </nav>
                     </div>
-                    <a href="home.html">Home</a>
-                    <a href="foodmenu.html">Food Menu</a>
-                    <a href="Aboutus.html">About us</a>
-                    <a href="History.html">History</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contactus.html">Contact</a>
-                    <div class="login-register">
-                        <a href="login.html">Login</a>
-                        <a href="register.html">Register</a>
-                    </div>
-                </nav>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
+    </header>
+    <main class="text">
+
+
+        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <div class="aspect-w-16 aspect-h-7">
+                <img class="w-full h-[200px] object-cover rounded-xl"
+                    src="/maindish/public/images/istockphoto-1488883191-170667a.webp" alt="Image Description">
+            </div>
 
     <div class="container">
         <h1>African Recipes</h1>

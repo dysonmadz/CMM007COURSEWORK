@@ -1,120 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .navbar {
-            background-color: #3498db; 
-            overflow: hidden; 
-            display: flex; 
-            justify-content: flex-end; 
-            align-items: center; 
-            padding: 10px; 
-        }
-        .navbar a {
-            color: white;
-            text-align: left;
-            padding: 10px 20px; 
-            text-decoration: none; 
-        }
-        .navbar a:hover {
-            background-color: #3498db;
-        }
-        .navbar a.active {
-            background-color: #3498db;
-        }
-        .login-register a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px; 
-        }
-        .logo img {
-            width: 100px;
-            height: auto; 
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
+
 <body>
-<!-- start of header  -->
-<header class="site-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2">
-            </div>
-            <div class="col-lg-10">
-                <nav class="navbar">
-                    <div class="logo">
-                        <img src="CSS/images/logo.png" alt="Maindish Aberdeen Logo">
-                    </div>
-                    <a href="home.html">Home</a>
-                    <a href="foodmenu.html">Food Menu</a>
-                    <a href="Aboutus.html">About us</a>
-                    <a href="History.html">History</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contactus.html">Contact</a>
-                    <div class="login-register">
-                        <a href="login.html">Login</a>
-                        <a href="register.html">Register</a>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-</header>
-    <!-- Recipe Content -->
-    <div class="container">
-        <h1>European Recipes</h1>
-
-        <!-- Recipe 1: Italian Pizza -->
-        <div class="recipe">
-            <h2>Italian Pizza</h2>
-            <img src="italian-pizza.jpg" alt="Italian Pizza">
-            <p>Indulge in the flavors of Italy with this classic Italian pizza recipe. Crisp crust, tangy tomato sauce, and gooey cheese come together to create a mouthwatering masterpiece. Customize with your favorite toppings and enjoy a taste of Italy right at home!</p>
-        </div>
-
-        <!-- Recipe 2: French Croissants -->
-        <div class="recipe">
-            <h2>French Croissants</h2>
-            <img src="french-croissants.jpg" alt="French Croissants">
-            <p>Transport yourself to a Parisian café with these buttery, flaky French croissants. Perfect for breakfast or brunch, these delicate pastries are sure to impress. With a golden-brown exterior and tender layers, each bite is pure bliss. Serve with jam and a steaming cup of coffee for the ultimate indulgence.</p>
-        </div>
-
-        <!-- Recipe 3: Spanish Paella -->
-        <div class="recipe">
-            <h2>Spanish Paella</h2>
-            <img src="spanish-paella.jpg" alt="Spanish Paella">
-            <p>Experience the vibrant flavors of Spain with this authentic Spanish paella recipe. Bursting with seafood, chicken, and chorizo, this one-pot wonder is a feast for the senses. Fragrant saffron rice, tender meats, and aromatic spices combine to create a dish that's both hearty and delicious. Serve with a squeeze of lemon and enjoy a taste of Spain!</p>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="site-footer" style="background-color: #3498db; color: #fff; padding: 50px 0;">
-        <div class="container">
+    <!-- start of header  -->
+    <header class="site-header">
+        <div class="">
             <div class="row">
-                <div class="col-lg-4" style="text-align: center;">
-                    <h3>Contact Us</h3>
-                    <p>Email: info@maindishaberdeen.com</p>
-                    <p>Phone: +123 456 7890</p>
+                <div class="col-lg-2">
+
                 </div>
-                <div class="col-lg-4" style="text-align: center;">
-                    <h3>View Our Food Menu</h3>
-                    <p>Explore our delicious dishes!</p>
-                    <a href="foodmenu.html" class="btn btn-primary" style="display: inline-block; background-color: #fff; color: #3498db; padding: 10px 20px; border-radius: 5px; text-decoration: none;">View Menu</a>
-                </div>
-                <div class="col-lg-4" style="text-align: center;">
-                    <h3>Privacy Policy</h3>
-                    <p>Read our privacy policy to learn how we protect your data.</p>
-                    <a href="privacy.html" style="color: #fff;">Privacy Policy</a>
+                <div class="col-lg-8">
+                    <div class="flex just bg-[#3498db] justify-between p-4 px-10">
+                        <div class="logo bg-white  ">
+                            <img src="logo.png" class="size-12 p-1 rounded" alt="Maindish Aberdeen Logo">
+                        </div>
+                        <nav class="navbar flex gap-8 text-white pt-4 ">
+                            <a href="home.html">Home</a>
+                            <a href="foodmenu.html">Food Menu</a>
+                            <a href="Aboutus.html">About us</a>
+                            <a href="History.html">History</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="contactus.html">Contact</a>
+                            <div class="login-register">
+                                <a href="login.html">Login</a>
+                                <a href="register.html">Register</a>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+    </header>
+    <main class="text">
+
+
+        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <div class="aspect-w-16 aspect-h-7">
+                <img class="w-full h-[200px] object-cover rounded-xl"
+                    src="/maindish/public/images/istockphoto-1488883191-170667a.webp" alt="Image Description">
+            </div>
+
+
+            <!-- Recipe Content -->
+            <div class="container">
+                <h1>European Recipes</h1>
+
+                <!-- Recipe 1: Italian Pizza -->
+                <div class="recipe">
+                    <h2>Italian Pizza</h2>
+                    <img src="italian-pizza.jpg" alt="Italian Pizza">
+                    <p>Indulge in the flavors of Italy with this classic Italian pizza recipe. Crisp crust, tangy tomato
+                        sauce, and gooey cheese come together to create a mouthwatering masterpiece. Customize with your
+                        favorite toppings and enjoy a taste of Italy right at home!</p>
+                </div>
+
+                <!-- Recipe 2: French Croissants -->
+                <div class="recipe">
+                    <h2>French Croissants</h2>
+                    <img src="french-croissants.jpg" alt="French Croissants">
+                    <p>Transport yourself to a Parisian café with these buttery, flaky French croissants. Perfect for
+                        breakfast or brunch, these delicate pastries are sure to impress. With a golden-brown exterior
+                        and tender layers, each bite is pure bliss. Serve with jam and a steaming cup of coffee for the
+                        ultimate indulgence.</p>
+                </div>
+
+                <!-- Recipe 3: Spanish Paella -->
+                <div class="recipe">
+                    <h2>Spanish Paella</h2>
+                    <img src="spanish-paella.jpg" alt="Spanish Paella">
+                    <p>Experience the vibrant flavors of Spain with this authentic Spanish paella recipe. Bursting with
+                        seafood, chicken, and chorizo, this one-pot wonder is a feast for the senses. Fragrant saffron
+                        rice, tender meats, and aromatic spices combine to create a dish that's both hearty and
+                        delicious. Serve with a squeeze of lemon and enjoy a taste of Spain!</p>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="site-footer" style="background-color: #3498db; color: #fff; padding: 50px 0;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4" style="text-align: center;">
+                            <h3>Contact Us</h3>
+                            <p>Email: info@maindishaberdeen.com</p>
+                            <p>Phone: +123 456 7890</p>
+                        </div>
+                        <div class="col-lg-4" style="text-align: center;">
+                            <h3>View Our Food Menu</h3>
+                            <p>Explore our delicious dishes!</p>
+                            <a href="foodmenu.html" class="btn btn-primary"
+                                style="display: inline-block; background-color: #fff; color: #3498db; padding: 10px 20px; border-radius: 5px; text-decoration: none;">View
+                                Menu</a>
+                        </div>
+                        <div class="col-lg-4" style="text-align: center;">
+                            <h3>Privacy Policy</h3>
+                            <p>Read our privacy policy to learn how we protect your data.</p>
+                            <a href="privacy.html" style="color: #fff;">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 </body>
+
 </html>
