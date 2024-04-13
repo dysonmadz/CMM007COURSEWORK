@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style>
         * {
             margin: 0;
             padding: 0;
@@ -39,35 +41,48 @@
             width: 100px;
             height: auto; 
         }
-    </style>
+    </style> -->
+
 </head>
+
 <body>
-<!-- start of header  -->
-<header class="site-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2">
-            </div>
-            <div class="col-lg-10">
-                <nav class="navbar">
-                    <div class="logo">
-                        <img src="CSS/images/logo.png" alt="Maindish Aberdeen Logo">
+    <!-- start of header  -->
+    <header class="site-header">
+        <div class="">
+            <div class="row">
+                <div class="col-lg-2">
+
+                </div>
+                <div class="col-lg-8">
+                    <div class="flex just bg-[#3498db] justify-between p-4 px-10">
+                        <div class="logo bg-white  ">
+                            <img src="logo.png" class="size-12 p-1 rounded" alt="Maindish Aberdeen Logo">
+                        </div>
+                        <nav class="navbar flex gap-8 text-white pt-4 ">
+                            <a href="home.html">Home</a>
+                            <a href="foodmenu.html">Food Menu</a>
+                            <a href="Aboutus.html">About us</a>
+                            <a href="History.html">History</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="contactus.html">Contact</a>
+                            <div class="login-register">
+                                <a href="login.html">Login</a>
+                                <a href="register.html">Register</a>
+                            </div>
+                        </nav>
                     </div>
-                    <a href="home.html">Home</a>
-                    <a href="foodmenu.html">Food Menu</a>
-                    <a href="Aboutus.html">About us</a>
-                    <a href="History.html">History</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contactus.html">Contact</a>
-                    <div class="login-register">
-                        <a href="login.html">Login</a>
-                        <a href="register.html">Register</a>
-                    </div>
-                </nav>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
+    </header>
+    <main class="text">
+
+
+        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <div class="aspect-w-16 aspect-h-7">
+                <img class="w-full h-[200px] object-cover rounded-xl"
+                    src="https://images.unsplash.com/photo-1624571409412-1f253e1ecc89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                    alt="Image Description">
+            </div>
 
         
         
