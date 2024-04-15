@@ -1,74 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .navbar {
-            background-color: #3498db; 
-            overflow: hidden; 
-            display: flex; 
-            justify-content: flex-end; 
-            align-items: center; 
-            padding: 10px; 
-        }
-        .navbar a {
-            color: white;
-            text-align: left;
-            padding: 10px 20px; 
-            text-decoration: none; 
-        }
-        .navbar a:hover {
-            background-color: #3498db;
-        }
-        .navbar a.active {
-            background-color: #3498db;
-        }
-        .login-register a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px; 
-        }
-        .logo img {
-            width: 100px;
-            height: auto; 
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
+
 <body>
-<!-- start of header  -->
-<header class="site-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2">
-            </div>
-            <div class="col-lg-10">
-                <nav class="navbar">
-                    <div class="logo">
-                        <img src="CSS/images/logo.png" alt="Maindish Aberdeen Logo">
+    <!-- start of header  -->
+    <header class="site-header">
+        <div class="">
+            <div class="row">
+                <div class="col-lg-2">
+
+                </div>
+                <div class="col-lg-8">
+                    <div class="flex just bg-[#3498db] justify-between p-4 px-10">
+                        <div class="logo bg-white  ">
+                            <img src="logo.png" class="size-12 p-1 rounded" alt="Maindish Aberdeen Logo">
+                        </div>
+                        <nav class="navbar flex gap-8 text-white pt-4 ">
+                            <a href="home.html">Home</a>
+                            <a href="foodmenu.html">Food Menu</a>
+                            <a href="Aboutus.html">About us</a>
+                            <a href="History.html">History</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="contactus.html">Contact</a>
+                            <div class="login-register">
+                                <a href="login.html">Login</a>
+                                <a href="register.html">Register</a>
+                            </div>
+                        </nav>
                     </div>
-                    <a href="home.html">Home</a>
-                    <a href="foodmenu.html">Food Menu</a>
-                    <a href="Aboutus.html">About us</a>
-                    <a href="History.html">History</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contactus.html">Contact</a>
-                    <div class="login-register">
-                
-                        <a href="login.html">Login</a>
-                        <a href="register.html">Register</a>
-                    </div>
-                </nav>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
+    </header>
+    <main class="text">
+
+
+        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <div class="aspect-w-16 aspect-h-7">
+                <img class="w-full h-[200px] object-cover rounded-xl"
+                    src="https://images.unsplash.com/photo-1624571409412-1f253e1ecc89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                    alt="Image Description">
+            </div>
+
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Chef Page</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        line-height: 1.6;
+                        color: #333;
+                        background-color: #f4f4f4;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .container {
+                        max-width: 85rem;
+                        margin: 0 auto;
+                        padding: 2rem;
+                    }
+
+                    .header {
+                        background-color: #3498db;
+                        padding: 1rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                    .header a {
+                        color: white;
+                        text-decoration: none;
+                        margin-left: 1rem;
+                    }
+
+                    .content {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        margin-top: 2rem;
+                    }
+
+                    .form-container {
+                        width: 30%;
+                        background-color: #fff;
+                        padding: 2rem;
+                        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .form-container h1 {
+                        margin-top: 0;
+                    }
+
+                    .form-container label {
+                        display: block;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    .form-container input,
+                    .form-container textarea,
+
+                    .form-container button {
+                        width: 100%;
+                        padding: 0.5rem;
+                        margin-bottom: 1rem;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                    }
+
+                    .form-container button {
+                        background-color: #3498db;
+                        color: #fff;
+                        border: none;
+                        cursor: pointer;
+                    }
+
+                    .recipes-container {
+                        width: 85%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+
+                    .recipe {
+                        width: calc(50% - 1rem);
+                        background-color: #fff;
+                        padding: 1rem;
+                        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                        margin-bottom: 2rem;
+                    }
+
+                    .recipe img {
+                        width: 100%;
+                        height: 200px;
+                        object-fit: cover;
+                        margin-bottom: 1rem;
+                    }
+
+                    .recipe h4 {
+                        margin: 0;
+                    }
+
+                    .recipe p {
+                        margin: 0.5rem 0;
+                    }
+                </style>
+            </head>
+
+            <body>
+                <header class="site-header">
+                    <!-- Header content here -->
+                </header>
 
 
     <!-- Main Content -->
@@ -118,27 +210,48 @@
     </div>
 
     <!-- Footer -->
-    <footer class="site-footer" style="background-color: #3498db; color: #fff; padding: 50px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4" style="text-align: center;">
-                    <h3>Contact Us</h3>
-                    <p>Email: info@maindishaberdeen.com</p>
-                    <p>Phone: +123 456 7890</p>
-                </div>
-                <div class="col-lg-4" style="text-align: center;">
-                    <h3>View Our Food Menu</h3>
-                    <p>Explore our delicious dishes!</p>
-                    <a href="foodmenu.html" class="btn btn-primary" style="display: inline-block; background-color: #fff; color: #3498db; padding: 10px 20px; border-radius: 5px; text-decoration: none;">View Menu</a>
-                </div>
-                <div class="col-lg-4" style="text-align: center;">
-                    <h3>Privacy Policy</h3>
-                    <p>Read our privacy policy to learn how we protect your data.</p>
-                    <a href="privacy.html" style="color: #fff;">Privacy Policy</a>
+    <footer class=" p-20" style="background-color: #3498db; color: #fff; " c>
+        <div class="">
+            <div class="container text-right">
+                <div class="grid sm:grid-cols-3 gap-8 md:gap-12">
+                    <div class="col-lg-4 " style="text-align:  left;">
+                        <h3>Contact Us</h3>
+                        <p>Email: info@maindishaberdeen.com</p>
+                        <p>Phone: +123 456 7890</p>
+                    </div>
+                    <div class="col-lg-4" style="text-align: left;">
+                        <h3>View Our Food Menu</h3>
+                        <p>Explore our delicious dishes!</p>
+                        <a href="foodmenu.html" class="btn btn-primary"
+                            style="display: inline-block; background-color: #fff; color: #3498db; padding: 10px 20px; border-radius: 5px; text-decoration: none;">View
+                            Menu</a>
+                    </div>
+                    <div class="col-lg-4" style="text-align:  left;">
+                        <h3>Privacy Policy</h3>
+                        <p>Read our privacy policy to learn how we protect your data.</p>
+                        <p>Current Time: <span id="current-time"></span></p>
+                        <p>Current Date: <span id="current-date"></span></p>
+                        <a href="privacy.html" style="color: #fff;">Privacy Policy</a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    </footer>
+
+    <script>
+        function getCurrentTimeAndDate() {
+            const now = new Date();
+            const currentTime = now.toLocaleTimeString('en-US');
+            const currentDate = now.toLocaleDateString('en-US');
+            document.getElementById('current-time').textContent = currentTime;
+            document.getElementById('current-date').textContent = currentDate;
+        }
+        setInterval(getCurrentTimeAndDate, 1000);
+
+        getCurrentTimeAndDate();
+    </script>
     
 </body>
 </html>
