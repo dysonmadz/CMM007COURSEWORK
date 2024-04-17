@@ -81,22 +81,22 @@
                             <p class="mt-2 md:mt-4 text-gray-500">
                                 Use the form below to add a new recipe to the site.
                             </p>
-                            <form action="/maindish/includesphp/upload.php" method="post" enctype="text/plain">
-                                <label for="name">RECIPIE NAME</label>
-                                <input type="text" id="name" name="name" required>
+                            <form action="../includesphp/upload.php" method="post" enctype="text/plain">
+                                <label for="recipe_name">RECIPIE NAME</label>
+                                <input type="text" id="recipe_name" name="recipe_name" required>
 
-                                <label for="email">RECIPIE DESCRIPTION</label>
-                                <input type="text" id="email" name="email" required>
+                                <label for="description">RECIPIE DESCRIPTION</label>
+                                <input type="text" id="description" name="description" required>
 
-                                <label for="message">Details</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-
+                                <label for="details">Details</label>
+                                <textarea id="details" name="details" rows="5" required></textarea>
+                                <input type="file" name="image" />
                                 <input type="submit" value="Submit">
                             </form>
-                            <form action="post" action="/maindish/includesphp/upload.php" enctype="multipart/form-data">
-                                <input type="file" name="image" />
+                            <!-- <form action="post" action="../includesphp/upload.php" enctype="multipart/form-data">
+                                
                                 <input type="submit" name="submit" value="Upload" />
-                            </form>
+                            </form> -->
                         </div>
 
                         <div class="lg:col-span-2">
