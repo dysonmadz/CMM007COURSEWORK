@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            background-color: #3498db; 
+            overflow: hidden; 
+            display: flex; 
+            justify-content: flex-end; 
+            align-items: center; 
+            padding: 10px; 
+        }
+        .navbar a {
+            color: white;
+            text-align: left;
+            padding: 10px 20px; 
+            text-decoration: none; 
+        }
+        .navbar a:hover {
+            background-color: #3498db;
+        }
+        .navbar a.active {
+            background-color: #3498db;
+        }
+        .login-register a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px; 
+        }
+        .logo img {
+            width: 100px;
+            height: auto; 
+        }
+    </style> -->
+
+</head>
+
+<body>
+    <!-- start of header  -->
+    <header class="site-header">
+        <div class="">
+            <div class="row">
+                <div class="col-lg-2">
+
+                </div>
+                <div class="col-lg-8">
+                    <div class="flex just bg-[#3498db] justify-between p-4 px-10">
+                        <div class="logo bg-white  ">
+                            <img src="logo.png" class="size-12 p-1 rounded" alt="Maindish Aberdeen Logo">
+                        </div>
+                        <nav class="navbar flex gap-8 text-white pt-4 ">
+                            <a href="home.html">Home</a>
+                            <a href="foodmenu.html">Food Menu</a>
+                            <a href="Aboutus.html">About us</a>
+                            <a href="History.html">History</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="contactus.html">Contact</a>
+                            <div class="login-register">
+                                <a href="login.html">Login</a>
+                                <a href="register.html">Register</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <main class="text">
+
+
+        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <div class="aspect-w-16 aspect-h-7">
+                <img class="w-full h-[200px] object-cover rounded-xl"
+                    src="Jollof_Rice_with_Stew.jpg"
+                    alt="Header img">
+            </div>
+
+                <h1>CONGRATULATIONS THE NEW CHEF WAS ADDED SUCCESSFULLY</h1>
+
+                
+                <div class="recipe">
+                    <h1> <a href="adminpanel.html">Go Back to Your Page</h1>
+                    
+            </div>
+
+            <!-- Footer -->
+            <footer class=" p-20" style="background-color: #3498db; color: #fff; " c>
+                <div class="">
+                    <div class="container text-right">
+                        <div class="grid sm:grid-cols-3 gap-8 md:gap-12">
+                            <div class="col-lg-4 " style="text-align:  left;">
+                                <h3>Contact Us</h3>
+                                <p>Email: info@maindishaberdeen.com</p>
+                                <p>Phone: +123 456 7890</p>
+                            </div>
+                            <div class="col-lg-4" style="text-align: left;">
+                                <h3>View Our Food Menu</h3>
+                                <p>Explore our delicious dishes!</p>
+                                <a href="foodmenu.html" class="btn btn-primary"
+                                    style="display: inline-block; background-color: #fff; color: #3498db; padding: 10px 20px; border-radius: 5px; text-decoration: none;">View
+                                    Menu</a>
+                            </div>
+                            <div class="col-lg-4" style="text-align:  left;">
+                                <h3>Privacy Policy</h3>
+                                <p>Read our privacy policy to learn how we protect your data.</p>
+                                <p>Current Time: <span id="current-time"></span></p>
+                                <p>Current Date: <span id="current-date"></span></p>
+                                <a href="privacy.html" style="color: #fff;">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            </footer>
+
+            <script>
+                function getCurrentTimeAndDate() {
+                    const now = new Date();
+                    const currentTime = now.toLocaleTimeString('en-US');
+                    const currentDate = now.toLocaleDateString('en-US');
+                    document.getElementById('current-time').textContent = currentTime;
+                    document.getElementById('current-date').textContent = currentDate;
+                }
+                setInterval(getCurrentTimeAndDate, 1000);
+
+                getCurrentTimeAndDate();
+            </script>
+</body>
+
+</html>
