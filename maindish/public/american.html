@@ -46,72 +46,82 @@
                 <img class="w-full h-[200px] object-cover rounded-xl" src="americanhotdog.jpeg" alt="Header img">
             </div>
 
-    <!-- Recipe Content -->
-    <div class="container">
-        <h1>American Recipes</h1>
+            <!-- Recipe Content -->
+            <div class="container">
+                <h1>American Recipes</h1>
 
-        <!-- Recipe 1: Classic Burger -->
-        <div class="recipe">
-            <h2>Classic Burger</h2>
-            <p>Sink your teeth into this iconic American dish – the classic burger! Juicy beef patty, melted cheese, crisp lettuce, ripe tomatoes, and tangy pickles, all sandwiched between soft buns. Whether grilled outdoors or cooked on a stovetop, this burger is sure to satisfy your cravings.</p>
-        </div>
+                <!-- Recipe 1: Classic Burger -->
+                <div class="recipe">
+                    <h2>Classic Burger</h2>
+                    <p>Sink your teeth into this iconic American dish – the classic burger! Juicy beef patty, melted
+                        cheese, crisp lettuce, ripe tomatoes, and tangy pickles, all sandwiched between soft buns.
+                        Whether grilled outdoors or cooked on a stovetop, this burger is sure to satisfy your cravings.
+                    </p>
+                </div>
 
-        <!-- Recipe 2: Macaroni and Cheese -->
-        <div class="recipe">
-            <h2>Macaroni and Cheese</h2>
-            <p>Indulge in the ultimate comfort food with creamy, cheesy macaroni and cheese. Tender macaroni noodles smothered in a rich cheese sauce, baked until bubbly and golden brown. This classic American dish is perfect for family dinners, potlucks, and anytime you need a little cheesy goodness in your life.</p>
-        </div>
+                <!-- Recipe 2: Macaroni and Cheese -->
+                <div class="recipe">
+                    <h2>Macaroni and Cheese</h2>
+                    <p>Indulge in the ultimate comfort food with creamy, cheesy macaroni and cheese. Tender macaroni
+                        noodles smothered in a rich cheese sauce, baked until bubbly and golden brown. This classic
+                        American dish is perfect for family dinners, potlucks, and anytime you need a little cheesy
+                        goodness in your life.</p>
+                </div>
 
-        <!-- Recipe 3: BBQ Ribs -->
-        <div class="recipe">
-            <h2>BBQ Ribs</h2>
-            <p>Fire up the grill and get ready for finger-licking goodness with these tender BBQ ribs. Marinated in a tangy barbecue sauce and slow-cooked to perfection, these ribs are fall-off-the-bone delicious. Whether you're hosting a summer cookout or craving a hearty meal, BBQ ribs are always a crowd-pleaser.</p>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class=" p-20" style="background-color: #3498db; color: #fff; " c>
-        <div class="">
-            <div class="container text-right">
-                <div class="grid sm:grid-cols-3 gap-8 md:gap-12">
-                    <div class="col-lg-4 " style="text-align:  left;">
-                        <h3>Contact Us</h3>
-                        <p>Email: info@maindishaberdeen.com</p>
-                        <p>Phone: +123 456 7890</p>
-                    </div>
-                    <div class="col-lg-4" style="text-align: left;">
-                        <h3>View Our Food Menu</h3>
-                        <p>Explore our delicious dishes!</p>
-                        <a href="foodmenu.html" class="btn btn-primary"
-                            style="display: inline-block; background-color: #fff; color: #3498db; padding: 10px 20px; border-radius: 5px; text-decoration: none;">View
-                            Menu</a>
-                    </div>
-                    <div class="col-lg-4" style="text-align:  left;">
-                        <h3>Privacy Policy</h3>
-                        <p>Read our privacy policy to learn how we protect your data.</p>
-                        <p>Current Time: <span id="current-time"></span></p>
-                        <p>Current Date: <span id="current-date"></span></p>
-                        <a href="privacy.html" style="color: #fff;">Privacy Policy</a>
-                    </div>
+                <!-- Recipe 3: BBQ Ribs -->
+                <div class="recipe">
+                    <h2>BBQ Ribs</h2>
+                    <p>Fire up the grill and get ready for finger-licking goodness with these tender BBQ ribs. Marinated
+                        in a tangy barbecue sauce and slow-cooked to perfection, these ribs are fall-off-the-bone
+                        delicious. Whether you're hosting a summer cookout or craving a hearty meal, BBQ ribs are always
+                        a crowd-pleaser.</p>
                 </div>
             </div>
-        </div>
-    </footer>
 
-    </footer>
+            <!-- Footer -->
+            <footer class=" p-20" style="background-color: #3498db; color: #fff; " c>
+                <div class="">
+                    <div class="container text-right">
+                        <div class="grid sm:grid-cols-3 gap-8 md:gap-12">
+                            <div class="col-lg-4 " style="text-align:  left;">
+                                <h3>Contact Us</h3>
+                                <p>Email: info@maindishaberdeen.com</p>
+                                <p>Phone: +123 456 7890</p>
+                            </div>
+                            <div class="col-lg-4" style="text-align: left;">
+                                <h3>View Our Food Menu</h3>
+                                <p>Explore our delicious dishes!</p>
+                                <a href="foodmenu.html" class="btn btn-primary"
+                                    style="display: inline-block; background-color: #fff; color: #3498db; padding: 10px 20px; border-radius: 5px; text-decoration: none;">View
+                                    Menu</a>
+                            </div>
+                            <div class="col-lg-4" style="text-align:  left;">
+                                <h3>Privacy Policy</h3>
+                                <p>Read our privacy policy to learn how we protect your data.</p>
+                                <p>Current Time: <span id="current-time"></span></p>
+                                <p>Current Date: <span id="current-date"></span></p>
+                                <a href="privacy.html" style="color: #fff;">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 
-    <script>
-        function getCurrentTimeAndDate() {
-            const now = new Date();
-            const currentTime = now.toLocaleTimeString('en-US');
-            const currentDate = now.toLocaleDateString('en-US');
-            document.getElementById('current-time').textContent = currentTime;
-            document.getElementById('current-date').textContent = currentDate;
-        }
-        setInterval(getCurrentTimeAndDate, 1000);
+            </footer>
 
-        getCurrentTimeAndDate();
-    </script>
-    
+            <script>
+                function getCurrentTimeAndDate() {
+                    const now = new Date();
+                    const currentTime = now.toLocaleTimeString('en-US');
+                    const currentDate = now.toLocaleDateString('en-US');
+                    document.getElementById('current-time').textContent = currentTime;
+                    document.getElementById('current-date').textContent = currentDate;
+                }
+                setInterval(getCurrentTimeAndDate, 1000);
+
+                getCurrentTimeAndDate();
+            </script>
+
 </body>
+
 </html>

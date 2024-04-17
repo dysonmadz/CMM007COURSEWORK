@@ -43,82 +43,89 @@
 
         <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
             <div class="aspect-w-16 aspect-h-7">
-                <img class="w-full h-[200px] object-cover rounded-xl"
-                    src="americanspice.jpeg"
-                    alt="Header img">
+                <img class="w-full h-[200px] object-cover rounded-xl" src="americanspice.jpeg" alt="Header img">
             </div>
 
 
 
 
-    <!-- Recipe Content -->
-    <div class="container">
-        <h1>Asian Recipes</h1>
+            <!-- Recipe Content -->
+            <div class="container">
+                <h1>Asian Recipes</h1>
 
-        <!-- Recipe 1: Chicken Teriyaki -->
-        <div class="recipe">
-            <h2>Chicken Teriyaki</h2>
-            
-            <p>Enjoy the savory-sweet flavors of Japan with this delicious chicken teriyaki recipe. Tender chicken thighs marinated in a flavorful teriyaki sauce, then grilled to perfection. Serve with steamed rice and vegetables for a satisfying meal that's sure to please the whole family.</p>
-        </div>
+                <!-- Recipe 1: Chicken Teriyaki -->
+                <div class="recipe">
+                    <h2>Chicken Teriyaki</h2>
 
-        <!-- Recipe 2: Pad Thai -->
-        <div class="recipe">
-            <h2>Pad Thai</h2>
-            
-            <p>Transport your taste buds to Thailand with this classic Pad Thai recipe. Stir-fried rice noodles tossed with tofu, shrimp, or chicken, along with eggs, bean sprouts, and peanuts, all coated in a tangy tamarind sauce. Bursting with flavor and texture, Pad Thai is a beloved dish enjoyed around the world.</p>
-        </div>
+                    <p>Enjoy the savory-sweet flavors of Japan with this delicious chicken teriyaki recipe. Tender
+                        chicken thighs marinated in a flavorful teriyaki sauce, then grilled to perfection. Serve with
+                        steamed rice and vegetables for a satisfying meal that's sure to please the whole family.</p>
+                </div>
 
-        <!-- Recipe 3: Chicken Curry -->
-        <div class="recipe">
-            <h2>Chicken Curry</h2>
-            
-            <p>Experience the bold and aromatic flavors of India with this comforting chicken curry recipe. Tender chicken simmered in a fragrant blend of spices, coconut milk, and tomatoes, creating a rich and flavorful sauce. Serve with fluffy basmati rice or warm naan bread for a satisfying meal.</p>
-        </div>
-    </div>
+                <!-- Recipe 2: Pad Thai -->
+                <div class="recipe">
+                    <h2>Pad Thai</h2>
 
-    <!-- Footer -->
-    <footer class=" p-20" style="background-color: #3498db; color: #fff; " c>
-        <div class="">
-            <div class="container text-right">
-                <div class="grid sm:grid-cols-3 gap-8 md:gap-12">
-                    <div class="col-lg-4 " style="text-align:  left;">
-                        <h3>Contact Us</h3>
-                        <p>Email: info@maindishaberdeen.com</p>
-                        <p>Phone: +123 456 7890</p>
-                    </div>
-                    <div class="col-lg-4" style="text-align: left;">
-                        <h3>View Our Food Menu</h3>
-                        <p>Explore our delicious dishes!</p>
-                        <a href="foodmenu.html" class="btn btn-primary"
-                            style="display: inline-block; background-color: #fff; color: #3498db; padding: 10px 20px; border-radius: 5px; text-decoration: none;">View
-                            Menu</a>
-                    </div>
-                    <div class="col-lg-4" style="text-align:  left;">
-                        <h3>Privacy Policy</h3>
-                        <p>Read our privacy policy to learn how we protect your data.</p>
-                        <p>Current Time: <span id="current-time"></span></p>
-                        <p>Current Date: <span id="current-date"></span></p>
-                        <a href="privacy.html" style="color: #fff;">Privacy Policy</a>
-                    </div>
+                    <p>Transport your taste buds to Thailand with this classic Pad Thai recipe. Stir-fried rice noodles
+                        tossed with tofu, shrimp, or chicken, along with eggs, bean sprouts, and peanuts, all coated in
+                        a tangy tamarind sauce. Bursting with flavor and texture, Pad Thai is a beloved dish enjoyed
+                        around the world.</p>
+                </div>
+
+                <!-- Recipe 3: Chicken Curry -->
+                <div class="recipe">
+                    <h2>Chicken Curry</h2>
+
+                    <p>Experience the bold and aromatic flavors of India with this comforting chicken curry recipe.
+                        Tender chicken simmered in a fragrant blend of spices, coconut milk, and tomatoes, creating a
+                        rich and flavorful sauce. Serve with fluffy basmati rice or warm naan bread for a satisfying
+                        meal.</p>
                 </div>
             </div>
-        </div>
-    </footer>
 
-    </footer>
+            <!-- Footer -->
+            <footer class=" p-20" style="background-color: #3498db; color: #fff; " c>
+                <div class="">
+                    <div class="container text-right">
+                        <div class="grid sm:grid-cols-3 gap-8 md:gap-12">
+                            <div class="col-lg-4 " style="text-align:  left;">
+                                <h3>Contact Us</h3>
+                                <p>Email: info@maindishaberdeen.com</p>
+                                <p>Phone: +123 456 7890</p>
+                            </div>
+                            <div class="col-lg-4" style="text-align: left;">
+                                <h3>View Our Food Menu</h3>
+                                <p>Explore our delicious dishes!</p>
+                                <a href="foodmenu.html" class="btn btn-primary"
+                                    style="display: inline-block; background-color: #fff; color: #3498db; padding: 10px 20px; border-radius: 5px; text-decoration: none;">View
+                                    Menu</a>
+                            </div>
+                            <div class="col-lg-4" style="text-align:  left;">
+                                <h3>Privacy Policy</h3>
+                                <p>Read our privacy policy to learn how we protect your data.</p>
+                                <p>Current Time: <span id="current-time"></span></p>
+                                <p>Current Date: <span id="current-date"></span></p>
+                                <a href="privacy.html" style="color: #fff;">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 
-    <script>
-        function getCurrentTimeAndDate() {
-            const now = new Date();
-            const currentTime = now.toLocaleTimeString('en-US');
-            const currentDate = now.toLocaleDateString('en-US');
-            document.getElementById('current-time').textContent = currentTime;
-            document.getElementById('current-date').textContent = currentDate;
-        }
-        setInterval(getCurrentTimeAndDate, 1000);
+            </footer>
 
-        getCurrentTimeAndDate();
-    </script>
+            <script>
+                function getCurrentTimeAndDate() {
+                    const now = new Date();
+                    const currentTime = now.toLocaleTimeString('en-US');
+                    const currentDate = now.toLocaleDateString('en-US');
+                    document.getElementById('current-time').textContent = currentTime;
+                    document.getElementById('current-date').textContent = currentDate;
+                }
+                setInterval(getCurrentTimeAndDate, 1000);
+
+                getCurrentTimeAndDate();
+            </script>
 </body>
+
 </html>
