@@ -1,9 +1,9 @@
 <?php
    // check if an image file was uploaded
-   if(isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
-      $name = $_FILES['image']['name'];
-      $type = $_FILES['image']['type'];
-      $data = file_get_contents($_FILES['image']['tmp_name']);
+   if(isset($_FILES['images']) && $_FILES['images']['error'] == 0) {
+      $name = $_FILES['images']['name'];
+      $type = $_FILES['images']['type'];
+      $data = file_get_contents($_FILES['images']['tmp_name']);
       // connect to the database
       $pdo = new PDO('mysql:host=localhost;dbname=mydb', 'username', 'password');
       // insert the image data into the database

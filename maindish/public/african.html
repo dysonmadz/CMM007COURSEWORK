@@ -43,67 +43,74 @@
 
         <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
             <div class="aspect-w-16 aspect-h-7">
-                <img class="w-full h-[200px] object-cover rounded-xl"
-                    src="africanfish.jpg"
-                    alt="Header img">
+                <img class="w-full h-[200px] object-cover rounded-xl" src="Jollof_Rice_with_Stew.jpg" alt="Header img">
             </div>
 
-        <h1>African Recipes</h1>
-        <h2>Jollof Rice</h2>
-        <p>Jollof rice is a popular West African dish made with rice, tomatoes, onions, and a variety of spices. 
-            It is often served with chicken, beef, or fish.</p>
+            <h1>African Recipes</h1>
+            <h2>Jollof Rice</h2>
+            <p>Jollof rice is a popular West African dish made with rice, tomatoes, onions, and a variety of spices.
+                It is often served with chicken, beef, or fish. Jollof rice is a versatile dish that can be customized
+                with various proteins and
+                vegetables to suit your preferences.
+                Experiment with different ingredients and spice levels to create your perfect version of this beloved
+                West African classic!</p>
+                
 
-        <h2>Fufu and Egusi Soup</h2>
-        <p>Fufu is a staple food in many African countries, made from boiled and mashed starchy vegetables like cassava,
-             yams, or plantains. Egusi soup is a thick, hearty soup made with ground melon seeds, vegetables, and often meat or fish.</p>
+            <h2>Fufu and Egusi Soup</h2>
+            <p>Fufu is a staple food in many African countries, made from boiled and mashed starchy vegetables like
+                cassava,
+                yams, or plantains. Egusi soup is a thick, hearty soup made with ground melon seeds, vegetables, and
+                often meat or fish.</p>
 
-        <h2>Bobotie</h2>
-        <p>Bobotie is a South African dish with Cape Malay origins, consisting of spiced minced meat baked with an egg-based topping. 
-            It is typically served with rice, chutney, and sliced bananas.</p>
-    </div>
+            <h2>Bobotie</h2>
+            <p>Bobotie is a South African dish with Cape Malay origins, consisting of spiced minced meat baked with an
+                egg-based topping.
+                It is typically served with rice, chutney, and sliced bananas.</p>
+        </div>
 
-    <!-- Footer -->
-    <footer class=" p-20" style="background-color: #3498db; color: #fff; " c>
-        <div class="">
-            <div class="container text-right">
-                <div class="grid sm:grid-cols-3 gap-8 md:gap-12">
-                    <div class="col-lg-4 " style="text-align:  left;">
-                        <h3>Contact Us</h3>
-                        <p>Email: info@maindishaberdeen.com</p>
-                        <p>Phone: +123 456 7890</p>
-                    </div>
-                    <div class="col-lg-4" style="text-align: left;">
-                        <h3>View Our Food Menu</h3>
-                        <p>Explore our delicious dishes!</p>
-                        <a href="foodmenu.html" class="btn btn-primary"
-                            style="display: inline-block; background-color: #fff; color: #3498db; padding: 10px 20px; border-radius: 5px; text-decoration: none;">View
-                            Menu</a>
-                    </div>
-                    <div class="col-lg-4" style="text-align:  left;">
-                        <h3>Privacy Policy</h3>
-                        <p>Read our privacy policy to learn how we protect your data.</p>
-                        <p>Current Time: <span id="current-time"></span></p>
-                        <p>Current Date: <span id="current-date"></span></p>
-                        <a href="privacy.html" style="color: #fff;">Privacy Policy</a>
+        <!-- Footer -->
+        <footer class=" p-20" style="background-color: #3498db; color: #fff; " c>
+            <div class="">
+                <div class="container text-right">
+                    <div class="grid sm:grid-cols-3 gap-8 md:gap-12">
+                        <div class="col-lg-4 " style="text-align:  left;">
+                            <h3>Contact Us</h3>
+                            <p>Email: info@maindishaberdeen.com</p>
+                            <p>Phone: +123 456 7890</p>
+                        </div>
+                        <div class="col-lg-4" style="text-align: left;">
+                            <h3>View Our Food Menu</h3>
+                            <p>Explore our delicious dishes!</p>
+                            <a href="foodmenu.html" class="btn btn-primary"
+                                style="display: inline-block; background-color: #fff; color: #3498db; padding: 10px 20px; border-radius: 5px; text-decoration: none;">View
+                                Menu</a>
+                        </div>
+                        <div class="col-lg-4" style="text-align:  left;">
+                            <h3>Privacy Policy</h3>
+                            <p>Read our privacy policy to learn how we protect your data.</p>
+                            <p>Current Time: <span id="current-time"></span></p>
+                            <p>Current Date: <span id="current-date"></span></p>
+                            <a href="privacy.html" style="color: #fff;">Privacy Policy</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    </footer>
+        </footer>
 
-    <script>
-        function getCurrentTimeAndDate() {
-            const now = new Date();
-            const currentTime = now.toLocaleTimeString('en-US');
-            const currentDate = now.toLocaleDateString('en-US');
-            document.getElementById('current-time').textContent = currentTime;
-            document.getElementById('current-date').textContent = currentDate;
-        }
-        setInterval(getCurrentTimeAndDate, 1000);
+        <script>
+            function getCurrentTimeAndDate() {
+                const now = new Date();
+                const currentTime = now.toLocaleTimeString('en-US');
+                const currentDate = now.toLocaleDateString('en-US');
+                document.getElementById('current-time').textContent = currentTime;
+                document.getElementById('current-date').textContent = currentDate;
+            }
+            setInterval(getCurrentTimeAndDate, 1000);
 
-        getCurrentTimeAndDate();
-    </script>
+            getCurrentTimeAndDate();
+        </script>
 </body>
+
 </html>
